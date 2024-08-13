@@ -6,7 +6,7 @@ tags:
 	- demo
 	- CMake
 	- GSettings
-categories: demo
+categories: demo项目
 keywords:
 	- Qt 
 	- GSettings
