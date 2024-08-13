@@ -1,0 +1,41 @@
+- const { use, lazyload } = theme.comments
+- const { appId, appKey, avatar, serverURLs, visitor, option } = theme.valine
+
+- let emojiMaps = '""'
+if site.data.valine
+  - emojiMaps = JSON.stringify(site.data.valine)
+
+script.
+  (() => {
+    const initValine = () => {
+      const valine = new Valine(Object.assign({
+        el: '#vcomment',
+        appId: '#{appId}',
+        appKey: '#{appKey}',
+        avatar: '#{avatar}',
+        serverURLs: '#{serverURLs}',
+        emojiMaps: !{emojiMaps},
+        master: 'f2dc5f84da93037a793efc920eb48cc1',
+        tagMeta: ["博主","小伙伴","访客"],
+        friends:  [],
+        path: window.location.pathname,
+        visitor: #{visitor}
+      }, !{JSON.stringify(option)}))
+    }
+
+    const loadValine = async () => {
+      if (typeof Valine === 'function') initValine()
+      else {
+        await getScript('!{url_for(theme.asset.valine)}')
+        initValine()
+      }
+    }
+
+    if ('!{use[0]}' === 'Valine' || !!{lazyload}) {
+      if (!{lazyload}) btf.loadComment(document.getElementById('vcomment'),loadValine)
+      else setTimeout(loadValine, 0)
+    } else {
+      window.loadOtherComment = loadValine
+    }
+  })()
+
