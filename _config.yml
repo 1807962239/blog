@@ -108,7 +108,7 @@ inject:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 ## 如果是netlify的话则不需要
-deploy:
-  type: git
+#deploy:
+#  type: git
 #  repo: git@github.com:1807962239/1807962239.github.io.git
 #  branch: main
