@@ -15,7 +15,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "cheerio": "^1.0.0-rc.12",
-    "hexo": "^7.0.0",
+    "hexo": "^7.3.0",
     "hexo-butterfly-charts": "^1.1.6",
     "hexo-butterfly-envelope": "^1.0.15",
     "hexo-deployer-git": "^4.0.0",
