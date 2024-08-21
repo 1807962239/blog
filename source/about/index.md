@@ -16,18 +16,6 @@ comments: false
 
 
 
-# 联系方式
-
-|  方式  |                 地址                 |
-| :----: | :----------------------------------: |
-| GitHub |    https://github.com/1807962239     |
-| Gitee  | https://gitee.com/waibibushixiaobabo |
-|   QQ   |              1807962239              |
-|  微信  |             13011366846              |
-|  邮箱  |          1807962239@qq.com           |
-
-
-
 # 文章发布统计
 
 

@@ -36,10 +36,10 @@ code_word_wrap: true
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  iconfont icon-Gitee: https://gitee.com/waibibushixiaobabo || Gitee
+  iconfont icon-csdn: https://blog.csdn.net/m0_73644079?type=blog || CSDN
   #fab fa-github: https://github.com/1807962239 || Github || '#24292e'
-  #fas fa-envelope-open-text: mailto:1807962239@qq.com || Email || '#4a7dbe'
+  fas fa-envelope-open-text: mailto:1807962239@qq.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
 # --------------------------------------
@@ -930,6 +930,7 @@ inject:
      - <link rel="stylesheet" href="/css/font.css"> # 字体
      - <link rel="stylesheet" href="/css/modify.css"> # 一图流
      - <link rel="stylesheet" href="/css/transpancy.css"> #半透明页面
+     - <link rel="stylesheet" href="/css/myicon.css"> #国内图标
   bottom:
     # - <script src="xxxx"></script>
 
