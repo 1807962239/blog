@@ -25,6 +25,12 @@
   color: red;
 }
 
+.icon-Gitee:hover {
+  content: "\e600";
+  font-size: 22px;
+  color: red;
+}
+
 #aside-content .card-info .card-info-social-icons .social-icon :hover{
     transform: none;
 }
